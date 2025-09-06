@@ -16,7 +16,7 @@ export default function Home() {
       <SEO />
       <Navbar />
       <main className="min-h-screen bg-[#F3F4EF]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <HeroSection />
           <AlternativesSection />
           <FeaturesSection />
