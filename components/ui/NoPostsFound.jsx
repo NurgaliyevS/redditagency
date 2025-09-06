@@ -16,9 +16,9 @@ export default function NoPostsFound() {
       </div>
       <a
         className="btn btn-primary px-4 py-2 rounded-md flex items-center"
-        href="/dashboard/scheduling"
+        href="/#pricing"
       >
-        Schedule Post
+        Get Started
         <FiArrowRight className="w-3 h-3 ml-1" />
       </a>
     </div>

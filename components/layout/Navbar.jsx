@@ -9,12 +9,12 @@ export default function Navbar() {
 
   const handleClick = () => {
     if (session) {
-      router.push("/dashboard/onboarding");
+      router.push("/#pricing");
     } else {
       if (session?.user?.name && typeof window !== "undefined") {
         window.Affonso.signup(session?.user?.name);
       }
-      signIn("reddit", { callbackUrl: "/dashboard/onboarding" });
+      signIn("reddit", { callbackUrl: "/#pricing" });
     }
   };
 

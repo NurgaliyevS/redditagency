@@ -3,8 +3,7 @@ import { useRouter } from "next/router";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function CTAButton({
-  text = "Schedule Now",
-  dashboardPath = "/dashboard/onboarding",
+  text = "Get Started",
   className = "btn btn-primary",
 }) {
   const { data: session, status } = useSession();
@@ -12,12 +11,12 @@ export default function CTAButton({
 
   const handleClick = () => {
     if (status === "authenticated") {
-      router.push(dashboardPath);
+      router.push("/#pricing");
     } else {
       if (session?.user?.name && typeof window !== "undefined") {
         window.Affonso.signup(session?.user?.name);
       }
-      signIn("reddit", { callbackUrl: "/dashboard/onboarding" });
+      signIn("reddit", { callbackUrl: "/#pricing" });
     }
   };
 

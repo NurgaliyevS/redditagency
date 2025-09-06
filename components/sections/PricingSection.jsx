@@ -11,25 +11,9 @@ export default function PricingSection() {
 
   const handleSubscription = async (plan) => {
     try {
-      // VISIT WEBSITE WITH REFERRAL ID
-      console.log("referralId", referralId);
-
       setLoading(true);
-      const response = await fetch("/api/create-checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          plan,
-          planDetails: getPlanDetails(plan),
-          billingCycle,
-          affonso_referral: referralId,
-        }),
-      });
-
-      const { url } = await response.json();
-      window.location.href = url;
+      // Redirect to external pricing page or contact form
+      window.open("mailto:nurgasab@gmail.com?subject=Interest in " + plan + " plan", "_blank");
     } catch (error) {
       console.error("Subscription error:", error);
       alert("Something went wrong. Please try again.");
