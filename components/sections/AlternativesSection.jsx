@@ -1,41 +1,69 @@
 export default function AlternativesSection() {
-    return (
-      <section className="py-16 mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">
-          Alternatives are expensive.
-        </h2>
-        <div className="grid md:grid-cols-3 gap-4 mx-auto">
-          <div className="p-6 rounded-xl border border-red-200 bg-red-50">
-            <div className="flex justify-between mb-2">
-              <span className="font-semibold">Marketing Agencies</span>
-              <span className="text-red-500">✕</span>
+  const workData = [
+    {
+      reach: { views: "455K" },
+      engagement: { upvotes: "688", upvoteRatio: "94%", comments: "199" }
+    },
+    {
+      reach: { views: "305K" },
+      engagement: { upvotes: "281", upvoteRatio: "93%", comments: "177" }
+    },
+    {
+      reach: { views: "134K" },
+      engagement: { upvotes: "277", upvoteRatio: "85%", comments: "134" }
+    },
+    {
+      reach: { views: "126K" },
+      engagement: { upvotes: "231", upvoteRatio: "90%", comments: "66" }
+    }
+  ];
+
+  return (
+    <section className="py-16 mx-auto px-4 max-w-6xl">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Work</h2>
+        <p className="text-lg text-orange-600 italic">PROVEN EXPERTISE. REAL RESULTS</p>
+      </div>
+      
+      <div className="grid md:grid-cols-2 gap-6">
+        {workData.map((work, index) => (
+          <div key={index} className="bg-white rounded-lg p-6 shadow-sm border">
+            <div className="space-y-6">
+              {/* Reach Section */}
+              <div>
+                <h3 className="text-lg font-semibold mb-3">Reach</h3>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">👁️</span>
+                  <span className="text-gray-600">Views</span>
+                  <span className="text-2xl font-bold ml-auto">{work.reach.views}</span>
+                </div>
+              </div>
+
+              {/* Engagement Section */}
+              <div>
+                <h3 className="text-lg font-semibold mb-3">Engagement</h3>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">⬆️</span>
+                    <span className="text-gray-600">Upvotes</span>
+                    <span className="text-xl font-bold ml-auto">{work.engagement.upvotes}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">%</span>
+                    <span className="text-gray-600">Upvote Ratio</span>
+                    <span className="text-xl font-bold ml-auto">{work.engagement.upvoteRatio}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">💬</span>
+                    <span className="text-gray-600">Comments</span>
+                    <span className="text-xl font-bold ml-auto">{work.engagement.comments}</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p className="text-sm text-gray-600">
-              Expensive, $50-200 per post, burning through $4500 to $6500 a
-              month.
-            </p>
           </div>
-          <div className="p-6 rounded-xl border border-red-200 bg-red-50">
-            <div className="flex justify-between mb-2">
-              <span className="font-semibold">Doing it yourself</span>
-              <span className="text-red-500">✕</span>
-            </div>
-            <p className="text-sm text-gray-600">
-              Hours lost on researching, planning, writing, posting,
-              monitoring, re-purposing
-            </p>
-          </div>
-          <div className="p-6 rounded-xl border border-green-200 bg-green-50">
-            <div className="flex justify-between mb-2">
-              <span className="font-semibold">Post Content</span>
-              <span className="text-green-500">✓</span>
-            </div>
-            <p className="text-sm text-gray-600">
-              Automatically scheduling & publishing posts to subreddits, for a
-              monthly subscription
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+        ))}
+      </div>
+    </section>
+  );
+}

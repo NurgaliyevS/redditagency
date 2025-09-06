@@ -1,45 +1,24 @@
 import Link from "next/link";
-import Image from "next/image";
-import { useSession, signIn } from "next-auth/react";
-import { useRouter } from "next/router";
+import BookCallButton from "@/components/BookCallButton";
 
 export default function Navbar() {
-  const { data: session } = useSession();
-  const router = useRouter();
-
-  const handleClick = () => {
-    if (session) {
-      router.push("/#pricing");
-    } else {
-      if (session?.user?.name && typeof window !== "undefined") {
-        window.Affonso.signup(session?.user?.name);
-      }
-      signIn("reddit", { callbackUrl: "/#pricing" });
-    }
-  };
-
   return (
-    <nav className="flex justify-between items-center p-4 mx-auto">
-      <div className="flex items-center gap-2">
-        <Image
-          src="/logo.svg"
-          alt="Logo"
-          width={32}
-          height={32}
-          className="rounded-lg"
-        />
-        <span className="font-bold text-lg md:text-xl">Post Content</span>
-      </div>
-      <div className="flex gap-4">
-        <Link href="/#features" className="link link-hover hidden md:inline">
-          Features
-        </Link>
-        <Link href="/#pricing" className="link link-hover">
-          Pricing
-        </Link>
-        <button onClick={handleClick} className="link link-hover">
-          {session ? "Dashboard" : "Login"}
-        </button>
+    <nav className="sticky top-0 z-50 bg-[#F3F4EF] border-b border-gray-200">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex justify-between items-center h-16 max-w-4xl mx-auto">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
+              <span className="text-white font-bold text-lg">⚡</span>
+            </div>
+            <span className="font-bold text-xl text-black">Reddit Agency</span>
+          </div>
+
+          {/* CTA Button */}
+          <div className="flex items-center">
+            <BookCallButton />
+          </div>
+        </div>
       </div>
     </nav>
   );
