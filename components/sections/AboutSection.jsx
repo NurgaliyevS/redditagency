@@ -3,31 +3,24 @@ import BookCallButton from "@/components/BookCallButton";
 export default function AboutSection() {
 
   return (
-    <section className="py-16 px-4 mx-auto max-w-6xl">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="py-16 px-4 mx-auto max-w-5xl">
+      <div className="flex flex-col lg:flex-row gap-12">
         {/* Left Column - Image */}
-        <div className="flex justify-center lg:justify-start">
-          <div className="relative">
-            <div className="w-80 h-80 bg-gray-200 rounded-2xl flex items-center justify-center overflow-hidden">
-              <div className="text-center">
-                <div className="w-64 h-64 bg-gradient-to-br from-gray-300 to-gray-400 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-gray-500 rounded-full mx-auto mb-4"></div>
-                    <div className="text-sm text-gray-600">Professional Photo</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex justify-center lg:justify-start w-full lg:w-[50%] h-[515px] order-2 lg:order-1">
+          <img 
+            src="/meme/me.jpg" 
+            alt="Professional photo" 
+            className="w-w-full max-w-2xl h-full object-contain rounded-3xl"
+          />
         </div>
 
         {/* Right Column - Content */}
-        <div className="space-y-6">
+        <div className="space-y-6 w-full lg:w-[50%] order-1 lg:order-2">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
             Fast-working agency with right target
           </h2>
           
-          <p className="text-lg text-gray-700">
+          <p className="text-xl text-gray-500 italic">
             Find your ideal audience on Reddit.
           </p>
 
