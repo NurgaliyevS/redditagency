@@ -7,7 +7,7 @@ export default function AlternativesSection() {
   ];
 
   return (
-    <section className="py-16 mx-auto px-4 max-w-6xl">
+    <section className="py-16 mx-auto px-4 max-w-6xl" id="results">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Work</h2>
         {/* <p className="text-lg text-orange-600 italic">PROVEN EXPERTISE. REAL RESULTS</p> */}

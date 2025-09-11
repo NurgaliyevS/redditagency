@@ -84,7 +84,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section id="pricing" className="py-16 px-4 mx-auto max-w-7xl">
+    <section id="pricing" className="py-16 px-4 mx-auto max-w-6xl">
       <h2 className="text-3xl font-bold text-center mb-12">Pricing</h2>
       
       <div className="grid lg:grid-cols-2 gap-8">

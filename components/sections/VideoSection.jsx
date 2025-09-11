@@ -1,9 +1,10 @@
 import React from "react";
+import BookCallButton from "@/components/BookCallButton";
 
 function VideoSection(props) {
   return (
     <section className="" id="demo">
-      <div className="py-16 md:py-24 max-md:px-8 max-w-3xl mx-auto">
+      <div className="py-16 md:pt-24 md:pb-16 max-md:px-8 max-w-3xl mx-auto">
         <div className="leading-relaxed text-base-content/80 mb-12 max-w-xl mx-auto">
           <img 
             alt="Reddit Agency - Professional Reddit Marketing Services" 
@@ -71,6 +72,11 @@ function VideoSection(props) {
             <span className="badge badge-accent badge-outline">Increased sales 300%</span>
           </div>
         </div> */}
+
+
+      <div className="text-center flex justify-center">
+        <BookCallButton />
+      </div>
       </div>
     </section>
   );

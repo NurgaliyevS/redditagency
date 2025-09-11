@@ -5,13 +5,17 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-[#F3F4EF] border-b border-gray-200">
       <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex justify-between items-center h-16 max-w-6xl mx-auto">
+        <div className="flex justify-between items-center h-16 max-w-5xl mx-auto">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
-              <span className="text-white font-bold text-lg">⚡</span>
-            </div>
-            <span className="font-bold text-xl text-black">Reddit Agency</span>
+            <img
+              src="/logo.svg"
+              alt="Reddit Agency Logo"
+              width={32}
+              height={32}
+              className="rounded-lg"
+            />
+            <p className="font-bold text-xl text-black">Reddit Agency</p>
           </div>
 
           {/* CTA Button */}
