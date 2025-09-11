@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://redditagency.com
+
+# Sitemaps
+Sitemap: https://redditagency.com/sitemap.xml
