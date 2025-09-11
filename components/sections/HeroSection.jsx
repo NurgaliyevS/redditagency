@@ -9,7 +9,7 @@ export default function HeroSection() {
           <img
             src="/results/mainImage.png"
             alt="Analytics chart showing reach and engagement metrics"
-            className="w-full h-auto lg:h-full lg:object-contain max-w-lg mx-auto lg:max-w-none"
+            className="w-[388px] h-[310px] object-cover lg:w-full lg:h-full lg:object-contain max-w-lg mx-auto lg:max-w-none"
           />
         </div>
 
