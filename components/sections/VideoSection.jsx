@@ -27,7 +27,7 @@ function VideoSection(props) {
         <div className="relative w-full max-w-4xl mx-auto aspect-video overflow-hidden rounded-lg">
           <iframe
             className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/cqWBjQyynQU"
+            src="https://www.youtube.com/embed/gWiIjtabZsE"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

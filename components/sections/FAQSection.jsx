@@ -40,7 +40,7 @@ export default function FAQSection() {
         ))}
       </div>
 
-      <div className="text-center">
+      <div className="text-center flex justify-center">
         <BookCallButton />
       </div>
     </section>
