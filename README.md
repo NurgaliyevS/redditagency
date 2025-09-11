@@ -1,89 +1,55 @@
-# Post Content
+# Reddit Agency
 
-An Open-Source Reddit Post Scheduler for Best Engagement
+A Professional Reddit Marketing Agency for Organic and Paid Growth
 
-## What is Post Content?
+## What is Reddit Agency?
 
-Post Content is an open-source tool that helps Reddit users optimize their post timing for maximum engagement. Our goal is to help content creators and marketers reach their target audience at the most effective times.
+Reddit Agency is a professional marketing agency that helps businesses grow and get noticed on Reddit. Our goal is to help businesses and entrepreneurs reach their target audience and drive meaningful traffic and customers through strategic Reddit marketing.
 
-## Why Post Content?
+## Why Reddit Agency?
 
-Most Reddit scheduling tools are either **closed-source**, **expensive**, or **lack advanced features**. Post Content is different:
+Most Reddit marketing agencies are either **expensive**, **slow**, or **lack proven results**. Reddit Agency is different:
 
-- ✅ **Open-Source** – Transparent and community-driven development
-- 🕒 **Smart Scheduling** - Best posting times
-- 🔒 **Privacy Focused** – Your posts, your data. No tracking, no selling, no middlemen.
-- ⚙️ **Easy to Use** – Simple and intuitive interface
-- 📊 **Analytics** – Track post performance and engagement
-- 🚀 **Developer-Friendly** – Built with extensibility in mind
+- ✅ **Proven Results** – Real results with transparent reporting
+- 🚀 **Fast Execution** – We execute in weeks, not months
+- 🎯 **Strategic Approach** – Audience analysis and targeted content
+- 📊 **Data-Driven** – Clear analytics and performance tracking
+- 💰 **ROI Focused** – Drive traffic that converts to customers
+- 🔥 **Expert Team** – Experienced Reddit marketers
 
-## Tech Stack
+## Services
 
-Post Content is built with modern and reliable technologies:
+Reddit Agency offers comprehensive Reddit marketing services:
 
-- **Frontend**: Next.js, React, Javascript, TailwindCSS, DaisyUI
-- **Backend**: Next.js API Routes
-- **Database**: MongoDB, Mongoose
-- **Authentication**: Reddit OAuth
+- **Audience Analysis** – Deep-dive analysis of your Ideal Customer Profile
+- **Reddit Research** – Finding perfect subreddits and trends
+- **Content Creation** – Reddit-specific content that converts
+- **Community Management** – Building genuine engagement
+- **Analytics & Reporting** – Clear performance tracking
 
 ## Getting Started
 
-### Prerequisites
+Ready to grow your business on Reddit? Here's how to get started:
 
-**Required Versions:**
-- [Node.js](https://nodejs.org/en/download) (v18 or higher)
-- [NPM](https://www.npmjs.com/get-npm) (v10 or higher)
+1. **Book a Call** – Schedule a consultation to discuss your goals
+2. **Strategy Development** – We analyze your business and create a custom Reddit strategy
+3. **Execution** – We implement the strategy and start driving results
+4. **Reporting** – Regular updates on performance and ROI
 
-### Setup
+## Pricing
 
-1. **Clone and Install**
-   ```npm
-   # Clone the repository
-   git clone https://github.com/NurgaliyevS/redditscheduler
-   cd redditscheduler
+**Reddit Growth Plan - $3,000**
+- 10 Strategic Posts
+- Unlimited Engagement Comments
+- ICP Analysis
+- Subreddit Analysis
+- Quick Execution (weeks, not months)
 
-   # Install dependencies
-   npm install
-   ```
+## Contact
 
-2. **Set Up Environment**
-   - Copy `.env.example` to `.env`
-   - Configure your environment variables (see below)
-
-3. **Start the App**
-   ```npm
-   npm run dev
-   ```
-
-4. **Open in Browser**
-   Visit [http://localhost:3000](http://localhost:3000)
-
-### Environment Variables
-
-Create a `.env` file in the root directory with the following variables:
-
-```env
-# Reddit OAuth
-REDDIT_CLIENT_ID=your_client_id
-REDDIT_CLIENT_SECRET=your_client_secret
-REDDIT_REDIRECT_URI=http://localhost:3000/api/auth/callback/reddit
-
-# Database
-MONGODB_URI=mongodb://localhost:27017/redditscheduler
-```
-
-### Reddit OAuth Setup
-
-1. Go to [Reddit App Preferences](https://www.reddit.com/prefs/apps)
-2. Create a new application
-3. Set the redirect URI to: `http://localhost:3000/api/auth/callback/reddit`
-4. Copy the client ID and client secret to your `.env` file
-
-## Features
-
-- **Smart Post Scheduling**: Schedule posts for optimal engagement times
-- **Post Performance Tracking**: Monitor your post engagement
-- **Cross-Posting**: Easily cross-post content to multiple subreddits
+- **Website**: [redditagency.com](https://redditagency.com)
+- **Email**: contact@redditagency.com
+- **Twitter**: [@tech_nurgaliyev](https://x.com/tech_nurgaliyev)
 
 ## Contributing
 

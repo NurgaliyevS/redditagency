@@ -5,43 +5,43 @@ export const customConfig = {
     theme: "winter",
     main: themes[`[data-theme=winter"]`],
   },
-  domainName: "post-content.com",
+  domainName: "redditagency.com",
   mailgun: {
     subdomain: "mg",
-    fromNoReply: `Post Content <noreply@mg.redditscheduler.com>`,
-    fromAdmin: `Post Content <admin@mg.redditscheduler.com>`,
+    fromNoReply: `Reddit Agency <noreply@mg.redditagency.com>`,
+    fromAdmin: `Reddit Agency <admin@mg.redditagency.com>`,
     supportEmail: "nurgasab@gmail.com",
     forwardRepliesTo: "nurgasab@gmail.com",
   },
-  documentTitle: "Post Content - Double Reddit Results While You Sleep",
-  domainWithHttps: "https://post-content.com",
+  documentTitle:
+    "Reddit Marketing Agency for Organic and Paid Growth",
+  domainWithHttps: "https://redditagency.com",
   seo: {
-    keywords:
-      "reddit scheduler, reddit automation, reddit marketing, social media automation, reddit posts, schedule reddit posts, reddit traffic, subreddit targeting",
     description:
-      "Post Content - Double Reddit Results While You Sleep",
-    themeColor: "#ffffff",
-    applicationName: "postcontent",
+      "Reddit Marketing Agency for Organic and Paid Growth. Get more customers and users through Reddit",
+    themeColor: "#F3F4EF",
+    applicationName: "redditagency",
     og: {
-      title: "Post Content - Double Reddit Results While You Sleep",
-      url: "https://post-content.com",
-      image: "https://post-content.com/company_related/og-image.jpg",
+      title:
+        "Reddit Agency - Reddit Marketing Agency for Organic and Paid Growth",
+      url: "https://redditagency.com",
+      image: "https://redditagency.com/company_related/og-image.jpg",
       imageAlt:
-        "Post Content - Automate your Reddit posts and drive traffic to your website. Schedule posts, analyze subreddits, and track performance - all in one platform.",
+        "Reddit Marketing Agency for Organic and Paid Growth. Get more customers and users through Reddit",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
-      twitterImage: "https://post-content.com/company_related/og-image.jpg",
+      twitterImage: "https://redditagency.com/company_related/og-image.jpg",
     },
   },
   blog: {
-    title: "Post Content Blog",
+    title: "Reddit Agency Blog",
     description:
-      "Learn about Reddit marketing, automation strategies, content creation, and how to drive traffic from Reddit to your website.",
-    canonical: "https://post-content.com/blog",
+      "Reddit Marketing Agency for Organic and Paid Growth. Get more customers and users through Reddit",
+    canonical: "https://redditagency.com/blog",
     author: {
       name: "Sabyr Nurgaliyev",
       description:
-        "I am a founder and Reddit marketing expert. I created Post Content to help businesses and content creators automate their Reddit presence and drive meaningful traffic to their websites.",
+        "I am a founder and Reddit marketing expert. I created Reddit Agency to help businesses and entrepreneurs grow their presence on Reddit and drive meaningful traffic and customers to their websites.",
     },
   },
 };

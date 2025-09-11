@@ -6,9 +6,9 @@ export default function SEO() {
     <Head>
       <title>{customConfig.documentTitle}</title>
       <meta name="description" content={customConfig.seo.description} />
-      <meta name="keywords" content={customConfig.seo.keywords} />
       <meta name="theme-color" content={customConfig.seo.themeColor} />
       <meta name="application-name" content={customConfig.seo.applicationName} />
+      <meta name="google-site-verification" content="otDrtjjkuCozwcOzSQ1oXZ7Ipz_vr9uBHlZKnl0iCSg" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
