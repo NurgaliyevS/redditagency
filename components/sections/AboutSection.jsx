@@ -8,7 +8,7 @@ export default function AboutSection() {
         {/* Left Column - Image */}
         <div className="flex justify-center lg:justify-start w-full lg:w-[50%] h-[515px] order-2 lg:order-1">
           <img 
-            src="/meme/me.jpg" 
+            src="/meme/me.webp" 
             alt="Professional photo" 
             className="w-w-full max-w-2xl h-full object-contain rounded-3xl"
           />

@@ -43,7 +43,7 @@ export default function FeaturesSection() {
         {/* Right Column - Meme Image */}
         <div className="flex justify-center lg:justify-end w-full lg:w-[50%]">
           <img 
-            src="/meme/WillFerrellMeme.png" 
+            src="/meme/WillFerrellMeme.webp" 
             alt="Will Ferrell meme saying SAY" 
             className="w-full max-w-2xl h-auto object-contain rounded-3xl"
           />

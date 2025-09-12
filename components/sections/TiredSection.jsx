@@ -29,7 +29,7 @@ export default function TiredSection() {
         {/* Right Column - Meme Image */}
         <div className="flex justify-center lg:justify-end w-full lg:w-[50%] order-2 lg:order-2">
           <img
-            src="/meme/SteveCarellMeme.jpg"
+            src="/meme/SteveCarellMeme.webp"
             alt="Steve Carell meme from The Office"
             className="w-full max-w-2xl h-auto object-contain rounded-3xl"
           />
