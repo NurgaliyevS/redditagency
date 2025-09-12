@@ -23,7 +23,7 @@ export const customConfig = {
     applicationName: "redditagency",
     og: {
       title:
-        "Reddit Agency - Reddit Marketing Agency for Organic and Paid Growth",
+        "Reddit Marketing Agency for Organic and Paid Growth",
       url: "https://redditagency.com",
       image: "https://redditagency.com/company_related/og-image.jpg",
       imageAlt:
