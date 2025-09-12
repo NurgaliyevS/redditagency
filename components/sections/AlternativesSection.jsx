@@ -1,9 +1,9 @@
 export default function AlternativesSection() {
   const resultImages = [
-    "/results/result1.png",
-    "/results/result2.png", 
-    "/results/result3.png",
-    "/results/result4.png"
+    "/results/result1.webp",
+    "/results/result2.webp", 
+    "/results/result3.webp",
+    "/results/result4.webp"
   ];
 
   return (

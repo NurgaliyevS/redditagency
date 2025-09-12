@@ -7,7 +7,7 @@ export default function HeroSection() {
         {/* Left Section - Image Only */}
         <div className="w-full lg:flex-1 lg:h-full order-2 lg:order-1">
           <img
-            src="/results/mainImage.png"
+            src="/results/mainImage.webp"
             alt="Analytics chart showing reach and engagement metrics"
             className="w-[388px] h-[310px] object-cover lg:w-full lg:h-full lg:object-contain max-w-lg mx-auto lg:max-w-none"
           />
