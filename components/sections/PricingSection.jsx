@@ -79,7 +79,7 @@ export default function PricingSection() {
         "Transparent reporting"
       ],
       isPopular: true,
-      link: "https://buy.stripe.com/fZu6oJ3VKa5Z706gViaVa0l"
+      link: "https://buy.stripe.com/00w9AV3VKemffwCfReaVa0m"
     }
   ];
 
