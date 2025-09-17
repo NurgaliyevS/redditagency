@@ -13,21 +13,19 @@ export const customConfig = {
     supportEmail: "nurgasab@gmail.com",
     forwardRepliesTo: "nurgasab@gmail.com",
   },
-  documentTitle:
-    "Reddit Marketing Agency for Organic and Paid Growth",
+  documentTitle: "The #1 Reddit Marketing Agency for ChatGPT & Google Ranking",
   domainWithHttps: "https://redditagency.com",
   seo: {
     description:
-      "Reddit Marketing Agency for Organic and Paid Growth. Get more customers and users through Reddit",
+      "We make content that ranks on ChatGPT and Google. Our Reddit marketing turns viral posts into paying customers.",
     themeColor: "#F3F4EF",
     applicationName: "redditagency",
     og: {
-      title:
-        "Reddit Marketing Agency for Organic and Paid Growth",
+      title: "The #1 Reddit Marketing Agency for ChatGPT & Google Ranking",
       url: "https://redditagency.com",
       image: "https://redditagency.com/company_related/og-image.jpg",
       imageAlt:
-        "Reddit Marketing Agency for Organic and Paid Growth. Get more customers and users through Reddit",
+        "We make content that ranks on ChatGPT and Google. Our Reddit marketing turns viral posts into paying customers.",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
       twitterImage: "https://redditagency.com/company_related/og-image.jpg",
@@ -36,7 +34,7 @@ export const customConfig = {
   blog: {
     title: "Reddit Agency Blog",
     description:
-      "Reddit Marketing Agency for Organic and Paid Growth. Get more customers and users through Reddit",
+      "We make content that ranks on ChatGPT and Google. Our marketing drives customers through Reddit",
     canonical: "https://redditagency.com/blog",
     author: {
       name: "Sabyr Nurgaliyev",
