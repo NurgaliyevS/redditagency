@@ -16,11 +16,11 @@ export default function HeroSection() {
         {/* Right Section - Main Message */}
         <div className="w-full lg:w-[50%] space-y-4 lg:space-y-6 order-1 lg:order-2 text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-            The #1 Reddit Marketing Agency for ChatGPT & Google Ranking
+            Reddit Marketing Agency for Organic and Paid Growth
           </h1>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            We make content that ranks on ChatGPT and Google. Our Reddit
-            marketing turns viral posts into paying customers.
+            We help businesses grow on Reddit, generating millions in impressions through strategic marketing campaigns.
+            Our content turns viral posts into paying customers.
           </p>
           <div className="flex justify-start">
             <BookCallButton />
