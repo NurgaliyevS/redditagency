@@ -64,11 +64,9 @@ export default function AutoPlay() {
             <div key={index} className="flex items-center justify-center h-32">
               <div className=" px-4 py-3 rounded-lg transition-all duration-300 flex flex-col items-center justify-center space-y-2 w-48 h-28">
                 <div className="flex items-center justify-center h-12 w-full">
-                  <Image
+                  <img
                     src={brand.image}
                     alt={brand.name}
-                    width={120}
-                    height={60}
                     className="object-contain max-h-12"
                   />
                 </div>
