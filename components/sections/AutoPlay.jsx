@@ -37,7 +37,7 @@ export default function AutoPlay() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1, // Very small screens
+          slidesToShow: 2, // Very small screens
         }
       }
     ]
@@ -45,7 +45,7 @@ export default function AutoPlay() {
   
   return (
     <div className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-700 py-20">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-white text-2xl font-bold mb-6">
             Reddit Agency
