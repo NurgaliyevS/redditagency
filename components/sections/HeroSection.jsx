@@ -2,7 +2,7 @@ import BookCallButton from "@/components/BookCallButton";
 
 export default function HeroSection() {
   return (
-    <div className="px-4 py-8 md:py-16 mx-auto max-w-7xl">
+    <div className="px-4 py-8 md:py-16 mx-auto max-w-6xl">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         {/* Left Section - Image Only */}
         <div className="w-full lg:flex-1 lg:h-full order-2 lg:order-1 lg:w-[50%]">
