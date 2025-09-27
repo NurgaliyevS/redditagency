@@ -66,6 +66,42 @@ export default function Footer() {
           </Link>
         </div>
 
+        <div className="flex flex-col gap-3 flex-1 text-center">
+          <span className="font-bold text-xs uppercase tracking-wider text-gray-500">
+            Subreddits
+          </span>
+          <Link
+            href="/subreddits/business"
+            className="text-sm hover:text-primary transition-colors"
+          >
+            Business
+          </Link>
+          <Link
+            href="/subreddits/marketing"
+            className="text-sm hover:text-primary transition-colors"
+          >
+            Marketing
+          </Link>
+          <Link
+            href="/subreddits/startup"
+            className="text-sm hover:text-primary transition-colors"
+          >
+            Startup
+          </Link>
+          <Link
+            href="/subreddits/sales"
+            className="text-sm hover:text-primary transition-colors"
+          >
+            Sales
+          </Link>
+          <Link
+            href="/subreddits/promotion"
+            className="text-sm hover:text-primary transition-colors"
+          >
+            Promotion
+          </Link>
+        </div>
+
         <div className="flex flex-col gap-3 flex-1 text-center md:text-right">
           <span className="font-bold text-xs uppercase tracking-wider text-gray-500">
             Connect
