@@ -1,0 +1,152 @@
+🚀 SEO & pSEO Plan for RedditAgency.com
+Phase 1 — Foundation (Week 1–2)
+
+Goal: Set up scalable SEO structure with programmatic subreddit pages.
+
+✅ Page Structure
+
+URL pattern: /subreddits/{keyword} (example: /subreddits/startup)
+
+Clean, scalable, SEO-friendly.
+
+✅ Rendering Strategy
+
+Next.js Pages Router with getStaticProps + getStaticPaths
+
+Incremental Static Regeneration (ISR) using revalidate (24h) for freshness.
+
+Avoid client-side fetching (useEffect) for SEO-critical content.
+
+✅ Database Setup
+
+MongoDB collection: subredditPages
+
+Fields:
+
+keyword
+
+slug
+
+title_tag
+
+meta_description
+
+h1
+
+intro
+
+cta_text
+
+subreddits[] (array of subreddit metadata: name, link, members, description, etc.)
+
+✅ Tier 1 Keywords (Business & Growth Intent)
+
+promotion
+
+startup
+
+business
+
+marketing
+
+stock
+
+launch
+
+brand
+
+learning
+
+🚀 RedditAgency.com SEO & pSEO Feature List
+Phase 1: Foundation Features (Week 1–2)
+1. Database & Data Management
+
+MongoDB collection setup for subredditPages.
+
+Data schema with SEO + content fields.
+
+Seed with Tier 1 keywords.
+
+2. Dynamic Page Structure
+
+Dynamic route: /subreddits/[slug].
+
+Automatic slug generation from keywords.
+
+Pre-render content with getStaticProps.
+
+ISR for automatic refresh without redeploy.
+
+3. SEO Optimization Features
+
+Dynamic title tags + meta descriptions.
+
+H1 optimization (include “Best Subreddits for {keyword}”).
+
+Structured data markup (FAQ + Article schema).
+
+Open Graph + Twitter meta tags.
+
+Canonical URLs.
+
+Auto XML sitemap for all /subreddits/{keyword} pages.
+
+4. Content Management
+
+Keyword-based page templates.
+
+Subreddit list integration (from MongoDB or Reddit API).
+
+Customizable intro + CTA text per page.
+
+Scalable content model for 100+ keywords.
+
+5. Initial Seed Pages (Tier 1)
+
+/subreddits/promotion
+
+/subreddits/startup
+
+/subreddits/business
+
+/subreddits/marketing
+
+/subreddits/stock
+
+/subreddits/launch
+
+/subreddits/brand
+
+/subreddits/learning
+
+6. Technical Implementation
+
+Next.js dynamic routing.
+
+MongoDB integration (Mongoose or direct).
+
+Error handling for missing slugs.
+
+Custom 404 for invalid pages.
+
+Loading states for ISR rebuilds.
+
+7. Performance & Analytics
+
+Optimize for Core Web Vitals (fast load, mobile-first).
+
+Preload fonts/images.
+
+Analytics integration (Google Analytics 4, optional Posthog/Amplitude).
+
+Track traffic by keyword/page.
+
+8. Deployment & Monitoring
+
+Deploy on Vercel.
+
+Environment variables for DB credentials.
+
+Production build with ISR caching.
+
+Error tracking (Sentry or Vercel Monitoring).

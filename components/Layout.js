@@ -2,18 +2,21 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 
 export default function Layout({ children }) {
-
   return (
     <div className="min-h-screen bg-[#F3F4EF]">
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto">
         {/* Navigation */}
-        <Navbar />
+        <div className="max-w-6xl mx-auto">
+          <Navbar />
+        </div>
 
         {/* Main content */}
         <main className="flex-grow">{children}</main>
 
         {/* Footer */}
-        <Footer />
+        <div className="max-w-6xl mx-auto">
+          <Footer />
+        </div>
       </div>
     </div>
   );

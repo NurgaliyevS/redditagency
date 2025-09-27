@@ -1,29 +1,22 @@
-import { useSession, signIn } from "next-auth/react";
-import { useRouter } from "next/router";
 import { FaArrowRight } from "react-icons/fa";
 
-export default function CTAButton({
-  text = "Get Started",
-  className = "btn btn-primary",
+export default function CTAButton({ 
+
+  className = "text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center max-w-fit",
+  children = "Book a Call"
 }) {
-  const { data: session, status } = useSession();
-  const router = useRouter();
-
-  const handleClick = () => {
-    if (status === "authenticated") {
-      router.push("/#pricing");
-    } else {
-      if (session?.user?.name && typeof window !== "undefined") {
-        window.Affonso.signup(session?.user?.name);
-      }
-      signIn("reddit", { callbackUrl: "/#pricing" });
-    }
-  };
-
   return (
-    <button onClick={handleClick} className={className}>
-      <FaArrowRight className='w-3 h-3' />
-      {text}
-    </button>
+    <a
+      href="https://cal.com/sabyr-nurgaliyev/reddit-agency"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+      style={{ backgroundColor: "#ff4500" }}
+      onMouseEnter={(e) => (e.target.style.backgroundColor = "#e03e00")}
+      onMouseLeave={(e) => (e.target.style.backgroundColor = "#ff4500")}
+    >
+      <FaArrowRight className="w-4 h-4 inline mr-2" />
+      {children}
+    </a>
   );
 }
